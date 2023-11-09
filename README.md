@@ -5,7 +5,7 @@ This is the official repository for the project "3D-QAE: A Fully Quantum Auto-En
 The codebase is implemented using the [Pytorch interface](https://docs.pennylane.ai/en/stable/introduction/interfaces/torch.html) in Pennylane, for noise-less quantum simulation on the CPU.
 
 <p align="center">
-<img src='https://github.com/rathilakshika/3D-QAE/blob/main/Images/teaser_figure.png' alt='Teasure Figure' width=400pt/>
+<img src='https://github.com/rishabhdabral/3D-QAE/blob/main/Images/teaser_figure.png' alt='Teasure Figure' width=400pt/>
 </p>
 
 ## Create environment
@@ -37,7 +37,7 @@ After the dataset preparation, the quantum models can be trained by running the 
 
 The config file allows us to set the training options. 
 - The parameter initialisation for the model can be set as random or identity in the ```params_initialization``` argument. For example, to set the parameter initialisation as random, run: ```python <filename.py> --config <path_to_config_file> --params_initialization random```
-- The basic building blocks of the quantum circuit can be chosen out of "A", "B", "C" or "D" in the ```basic_block``` argument. For example, the ```basic_block``` "B" can be chosen, by running: ```python <filename.py> --config <path_to_config_file> --basic_block B```. <img src='https://github.com/rathilakshika/3D-QAE/blob/main/Images/all_circuits.png' alt='Basic blocks we investigate'/> 
+- The basic building blocks of the quantum circuit can be chosen out of "A", "B", "C" or "D" in the ```basic_block``` argument. For example, the ```basic_block``` "B" can be chosen, by running: ```python <filename.py> --config <path_to_config_file> --basic_block B```. <img src='https://github.com/rishabhdabral/3D-QAE/blob/main/Images/all_circuits.png' alt='Basic blocks we investigate'/> 
 - The number of training epochs can be set using ```num_epochs``` argument.
 - The number of blocks each in the encoder/decoder of the model is set using ```num_reps``` argument.
 - The encoder or decoder can be replaced by classical fully-connected layers to build a hybrid model by setting the corresponding arguments. For example to build a hybrid model with classical encoder and quantum decoder, run: ```python <filename.py> --config <path_to_config_file> --classical_encoder True```

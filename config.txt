@@ -1,0 +1,15 @@
+expname = "NAME_OF_EXPERIMENT"
+basedir = "NAME_OF_DIRECTORY_TO_SAVE_RESULTS"
+train_file = "PATH_TO_TRAINING_FILE.npy"
+test_file = "PATH_TO_TEST_FILE.npy"
+
+num_vertices = 16
+num_qubits = 6
+bottleneck_qubits = 2
+num_reps = 8
+maxiter = 100
+lrate = 1e-2
+basic_block = "B"
+params_initialization = "random"
+classical_encoder = False
+classical_decoder = False

@@ -1,6 +1,6 @@
 # 3D-QAE
 
-This is the official repository for the project "3D-QAE: A Fully Quantum Auto-Encoder for 3D Shapes". This project introduces the first quantum auto-encoder for 3D point sets, using data normalisation techniques and by introducing auxiliary values to combat the input and output restrictions of quantum circuits. For more details, refer to the [paper]().
+This is the official repository for the project "3D-QAE: A Fully Quantum Auto-Encoder for 3D Shapes". This project introduces the first quantum auto-encoder for 3D point sets, using data normalisation techniques and by introducing auxiliary values to combat the input and output restrictions of quantum circuits. For more details, refer to the [project page](https://4dqv.mpi-inf.mpg.de/QAE3D/).
 
 The codebase is implemented using the [Pytorch interface](https://docs.pennylane.ai/en/stable/introduction/interfaces/torch.html) in Pennylane, for noise-less quantum simulation on the CPU.
 
@@ -46,3 +46,10 @@ The config file allows us to set the training options.
 Evaluating the different combinations, we observe that the basic block "B" alongwith the "repeat" architecture and "identity" parameter initialisation scheme works the best. Using 8 blocks each in the encoder and decoder, we report a mean euclidean distance of 10.86 cm. 
 
 ## Citation
+```
+@InProceedings{Rathi2023, 
+    author={Rathi, Lakshika  and Tretschk, Edith and Theobalt, Christian and Dabral, Rishabh  and Golyanik, Vladislav}, 
+    title={{3D-QAE}: Fully Quantum Auto-Encoding of 3D Point Clouds}, 
+    booktitle={The British Machine Vision Conference (BMVC)}, 
+    year={2023} 
+}
